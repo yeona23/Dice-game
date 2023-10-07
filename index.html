@@ -4,15 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dice-game</title>
+    <link rel="stylesheet" href="./common.css" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <div id="wrap">
       <main>
-        <div class="box-player__1">
+        <div class="box-player box-player_1">
           <h1>PLAYER 1</h1>
+          <p class="text-total-score text-total-score_1">0</p>
+          <div class="box-current-score">
+            <p>CURRENT</p>
+            <p class="text-current-score text-current-score_1">0</p>
+          </div>
         </div>
-        <button class="btn-"></button><button></button><button></button>
+        <div class="box-player box-player_2">
+          <h1>PLAYER 2</h1>
+          <p class="text-total-score text-total-score_2">0</p>
+          <div class="box-current-score">
+            <p>CURRENT</p>
+            <p class="text-current-score text-current-score_2">0</p>
+          </div>
+        </div>
+        <div class="container-btn">
+          <button class="btn-newgame">
+            <span class="image__btn">🔄</span> NEW GAME
+          </button>
+          <div class="box-image__dice">
+            <img src="./image/dice06.png" alt="dice06" />
+          </div>
+          <button class="btn-rolldice">
+            <span class="image__btn">🎲</span> ROLL DICE
+          </button>
+          <button class="btn-hold">
+            <span class="image__btn">📥</span> HOLD
+          </button>
+        </div>
       </main>
+      <script src="./script.js"></script>
     </div>
   </body>
 </html>
