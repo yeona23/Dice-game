@@ -24,15 +24,18 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-.box-player_1 {
   background: #d8d0c5;
-  box-shadow: 3px 3px 10px #ffffff inset;
 }
 
-.box-player_2 {
+.player--active {
   background: #d9832c;
+  box-shadow: 3px 3px 10px #ffffff50 inset;
+}
+
+.player--winner {
+  background: #3d3d3d;
+  color: #d8d0c5;
+  box-shadow: 3px 3px 10px #ffffff50 inset;
 }
 
 .text-total-score {
@@ -86,13 +89,30 @@ main {
   font-size: 1.125rem;
 }
 
+.hidden {
+  display: none;
+}
+
 button {
   box-shadow: 0.1rem 0.1rem 0.5em #00000050;
   padding: 0.5rem 1.5rem;
   border: none;
   border-radius: 3rem;
   color: #6e7b80;
+  cursor: pointer;
 }
 .btn-newgame {
   margin-bottom: 20rem;
+}
+
+@keyframes btn-push {
+  0% {
+    box-shadow: 0.1rem 0.1rem 0.5em #00000050;
+  }
+  50% {
+    box-shadow: 0.1rem 0.1rem 0.5em #00000000;
+  }
+  100% {
+    box-shadow: 0.1rem 0.1rem 0.5em #00000050;
+  }
 }
